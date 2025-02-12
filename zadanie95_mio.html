@@ -1,0 +1,47 @@
+<html>
+<head>
+    <style>
+        #tlo{
+            background-color: rgb(243, 243, 213);
+            height: 200px;
+            margin-top: -50px;
+            color: green;
+            text-align: center;
+            margin-left: 40%;
+
+            border-radius: 0px 0px 20px 20px;            margin-right: 40%;
+        }
+        #cos{
+            background-color: red;
+            border-radius: 20px;
+            margin-bottom: -20px;
+            height: 70px;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+        #dzien{
+            padding-top: 10% ;
+            font-size: 50px;
+        }
+    </style>
+<title>JavaScript - Data i czas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<body>
+<h2>Wyświetlam bieżącą datę i czas</h2>
+<p>
+<script type="text/javascript">
+data_n = new Date();
+data_l = data_n.toString();
+data_u = data_n.toGMTString();
+data_r = data_n.toLocaleString();
+document.getElementById('tlo').innerHTML += ("<b>Czas lokalny:</b> " + data_l + "<br>");
+//document.write("<b>Czas uniwersalny:</b> " + data_u + "<br>");
+//document.write("<b>Czas regionalny:</b> " + data_r + "<br>");
+</script>
+</p>
+<div id="cos">.</div>
+<div id="tlo">
+    <h1 id="dzien">19</h1>
+</div>
+</body>
+</html>

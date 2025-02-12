@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+function logowanie(dane)
+{
+if(dane.Login_mm.value=="Mionskowski"&dane.haslo.value=="Michał")
+{
+window.location.replace("obliczenia.html");
+}
+else
+{
+window.location.replace("");
+}
+}
+</script>
+</head>
+<body>
+<form name="formularz">
+Login_mm: <input type="text" name="Login_mm"/><br><br>
+Hasło_mm: <input type="password" name="haslo"/><br><br>
+<input type="button" value="Logowanie..." onClick="logowanie(this.form)"/><br><br>
+</form>
+</body>
+</html>

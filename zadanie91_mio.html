@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language='JavaScript' type='text/JavaScript'>
+        function weryfikacja_hasla()
+        {
+        var prob = 1;
+        var haslo = prompt('Podaj hasło','');
+        if (haslo != null)
+        {
+        while (prob < 3)
+        {
+        if (!haslo) history.go(-1);
+        if (haslo.toLowerCase() == 'asdf')
+        {
+        alert('Hasło OK!');
+        window.open('skrypt1.html','_top');
+        break;
+        }
+        prob+=1;
+        var haslo = prompt('Złe hasło. Spróbuj ponownie','Hasło');
+        }
+        }
+        if (haslo !=null) {
+        if (haslo.toLowerCase()!='Hasło' + prob ==3) history.go(-1);return ' ';}}
+        </script>
+        <form name="formularz">
+        <input type="button" value="Podaj Hasło" onClick="weryfikacja_hasla()"/><br><br>
+    
+</body>
+</html>
